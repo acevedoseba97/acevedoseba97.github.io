@@ -1,0 +1,267 @@
+/*Selector universal*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*CSS de elementos en general*/
+
+body {
+    background-color: #D0ECE7;
+}
+
+body section div img {
+    border-radius: 100px;
+    width: 50%;
+    height: auto;
+}
+
+body section ul li {
+    text-align: left;
+}
+
+body section ul li p {
+    display: inline-block;
+}
+
+/*CSS para la sección izquierda, donde aparece la información de contacto y educación*/
+
+.seccion-info {
+    background-color: #460457;
+    width: 25%;
+    height: auto;
+    padding: 15px;
+    float: left;
+    text-align: center;
+}
+
+.seccion-info h1 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo {
+    color: #ffff00;
+}
+
+.titulo h2,
+#profesion {
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-contacto ul,
+.info-educacion ul,
+.info-idiomas {
+    margin: 0 20px 0 20px;
+    padding: 0;
+}
+
+.fa-phone::before,
+.fa-envelope::before,
+.fa-globe::before,
+.fa-linkedin::before,
+.fa-earth-americas::before {
+    margin-right: 10px;
+}
+
+.fa-phone,
+.fa-globe,
+.fa-linkedin,
+.fa-earth-americas {
+    color: #ffffff;
+    text-align: left;
+}
+
+.fa-phone p {
+    margin: 0 auto 2px auto;
+    font-weight: 400;
+}
+
+.fa-envelope p {
+    color: #ffffff;
+    margin: 0 auto 2px auto;
+    text-align: left;
+    font-size: 100%;
+    font-family: Helvetica;
+    font-weight: 400;
+}
+
+.info-contacto ul li {
+    color: #ffffff;
+    margin: 5px auto 16px auto;
+    text-align: left;
+    font-size: 100%;
+    font-family: Helvetica;
+
+}
+
+.info-contacto ul li a {
+    color: #ffffff;
+}
+
+.info-educacion li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.info-educacion h4 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info-educacion h5 {
+    color: #00ffff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.info-idiomas ul {
+    display: grid;
+    justify-content: center;
+}
+
+.info-idiomas li {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*CSS para la sección derecha, donde aparece la información personal del usuario junto a sus habilidades*/
+
+.seccion-usuario {
+    background-color: #ffffff;
+    width: 75%;
+    height: auto;
+    padding: 15px;
+    float: left;
+}
+
+.seccion-usuario h2 {
+    color: #0c075c;
+    font-size: 20px;
+}
+
+.usuario-experiencia h4 {
+    display: flex;
+    flex-direction: row;
+    color: #006eff;
+    font-size: 18px;
+}
+
+.usuario-experiencia h5 {
+    display: flex;
+    flex-direction: row;
+    color: #006eff;
+    font-size: 15px;
+}
+
+.icono {
+    max-width: 16%;
+    height: auto;
+}
+
+.contenedor-intereses {
+    text-align: center;
+}
+
+.contenedor-intereses ul {
+    display: grid;
+    justify-content: center;
+}
+
+.contenedor-intereses ul li {
+    max-width: auto;
+    font-size: 30px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+}
+
+.contenedor-intereses ul li:hover {
+    border: 10px dashed #ffa500;
+    background: lightskyblue;
+}
+
+.botones-fondo {
+    margin-top: 2%;
+}
+
+.botones-fondo button {
+    margin-left: 4%;
+    float: right;
+    color: #ffff00;
+    border: 2px dashed #ff0000;
+    background-color: black;
+}
+
+/*CSS con diseño responsivo para diferentes dispositivos*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+
+    .seccion-info {
+        width: 100%;
+    }
+
+    .seccion-usuario {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .seccion-info {
+        width: 100%;
+    }
+
+    .seccion-usuario {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .seccion-info {
+        width: 100%;
+    }
+
+    .seccion-usuario {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .seccion-info {
+        width: 25%;
+    }
+
+    .seccion-usuario {
+        width: 75%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .seccion-info {
+        width: 25%;
+    }
+
+    .seccion-usuario {
+        width: 75%;
+    }
+}

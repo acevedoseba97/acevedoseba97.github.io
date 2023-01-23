@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://5245748.fs1.hubspotusercontent-na1.net/hub/5245748/hubfs/Logo%20Perfil%20180x180.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="seccion-info">
+        <div id="imagen-perfil"></div>
+
+        <h1 class="titulo" id="nombre-usuario"></h1>
+        <h2 id="profesion">Desarrollador web</h2>
+
+        <div class="info-contacto">
+
+            <h2 class="titulo">Contacto</h2>
+
+            <ul class="fa-ul">
+                <li><i class="fa-sharp fa-solid fa-phone" id="num-celular"></i></li>
+                <li><i class="fa-solid fa-envelope" id="correo"></i></li>
+                <li><i class="fa-solid fa-globe" id="sitioweb"></i><a href="https://www.google.com">www.mipaginaweb.com</a></li>
+                <li><i class="fa-brands fa-linkedin" id="linkedin"></i><a href="https://www.linkedin.com">www.linkedin.com/usuario</a></li>
+                <li><i class="fa-solid fa-earth-americas"></i>Argentina</li>
+            </ul>
+        </div>
+
+        <div class="info-educacion">
+            <h2 class="titulo">Educación</h2>
+
+            <ul>
+                <li>
+                    <h5>2001 - 2014</h5>
+                    <h4>Bachillerato</h4>
+                    <h4>Escuela Pública</h4>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h5>2010 - 2016</h5>
+                    <h4>Estudio del Idioma Inglés</h4>
+                    <h4>Escuela de Lenguas Extranjeras</h4>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h5>2014 - 2018</h5>
+                    <h4>Estudio del Idioma Portugués</h4>
+                    <h4>Escuela de Lenguas Extranjeras</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-idiomas">
+            <h2 class="titulo">Idiomas</h2>
+            <ul>
+                <li>Español</li>
+                <li>Inglés</li>
+                <li>Portugués</li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="seccion-usuario" id="fondo-usuario">
+        <h2>PERFIL</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae dui maximus, interdum ex nec, volutpat massa. Etiam vitae nisl ut ipsum tincidunt egestas sed porttitor enim. Ut consequat lobortis leo vel sagittis. Nunc fringilla ante et scelerisque consequat. Donec sit amet purus sed purus pharetra malesuada a eu massa. Nam sed lacus id eros ullamcorper ultrices. Praesent tellus nisi, dapibus vitae arcu vel, vulputate pellentesque magna. Pellentesque fringilla commodo suscipit.<br>
+
+        <br>Phasellus rutrum finibus odio non mattis. Nullam vel nibh eu mauris tempus varius nec id metus. Aenean vel porttitor sapien. Proin consequat bibendum ligula eget vehicula. Donec ut lacinia risus. Quisque non magna non arcu ultrices pulvinar a nec risus. Praesent malesuada finibus quam, ut faucibus augue euismod et.</p>
+
+        <h2>EXPERIENCIA</h2>
+
+        <div class="usuario-experiencia">
+            <h4>2021-Presente</h4><h5>Nombre de compañía - Rol</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae dui maximus, interdum ex nec, volutpat massa. Etiam vitae nisl ut ipsum tincidunt egestas sed porttitor enim.</p>
+
+            <h4>2017-2021</h4><h5>Nombre de compañía - Rol</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae dui maximus, interdum ex nec, volutpat massa. Etiam vitae nisl ut ipsum tincidunt egestas sed porttitor enim.</p>
+
+            <h4>2014-2017</h4><h5>Nombre de compañía - Rol</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae dui maximus, interdum ex nec, volutpat massa. Etiam vitae nisl ut ipsum tincidunt egestas sed porttitor enim.</p>
+
+        </div>
+
+        <h2>HABILIDADES</h2>
+
+        <ul>
+            <li>Autodidacta</li>
+            <li>Trabajo en equipo</li>
+            <li>Gestión del tiempo</li>
+            <li>Metodología SCRUM</li>
+        </ul>
+
+        <h2>LENGUAJES DE PROGRAMACIÓN</h2>
+
+        <img class="icono" src="lg-icon01.png" alt="ícono-HTML">
+        <img class="icono" src="lg-icon02.png" alt="ícono-CSS">
+        <img class="icono" src="lg-icon03.png" alt="ícono-JavaScript">
+
+        <div class="contenedor-intereses">
+            <h2>INTERESES</h2>
+
+            <button onclick="mostrarIntereses()">Click aquí para ver</button>
+
+             <button onclick="ocultarIntereses()">Click aquí para ocultar</button>
+
+            <p id="intereses"></p>
+        </div>
+
+        <div class="botones-fondo">
+
+            <button onclick="fondoDefault()">Click aquí para volver al fondo original</button>
+            <button onclick="cambiarFondo()">Click aquí para cambiar el fondo de pantalla</button>
+        
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
